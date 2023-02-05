@@ -10,16 +10,16 @@ import { TransformaRespostaInterceptor } from './core/http/transforma-resposta.i
   providers: [
     {
       provide: APP_FILTER,
-      useClass: FitroDeExcecaoHttp
+      useClass: FitroDeExcecaoHttp,
     },
     {
       provide: APP_INTERCEPTOR,
-      useClass: ClassSerializerInterceptor
+      useClass: ClassSerializerInterceptor,
     },
     {
       provide: APP_INTERCEPTOR,
-      useClass: TransformaRespostaInterceptor
-    }
+      useClass: TransformaRespostaInterceptor,
+    },
   ],
 })
 export class AppModule {}
